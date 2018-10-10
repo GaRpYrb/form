@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+<body>
+	<div class="ba-main">
+		<div class="ba-main__head">
+			<h2 class="ba-main__head--h2">Harold Finch</h2>
+			<h3 class="ba-main__head--h3">YOUR TOTAL</h3>
+			<h4 class="ba-main__head--h4">$88</h4>
+		</div>
+		<form class="ba-main__form" method="get"> 
+			<label for="card_number">Credit card number<br>
+				<input class="ba-main__form--input" type="numbers" name="card_number" placeholder="Your card number" maxlength="16" required>
+			</label>
+			<label for="month">Experation date<br>
+				<select class="ba-main__form--select" name="month" required>
+					<option>Month</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>
+				<select class="ba-main__form--select2" name="year" required>
+					<option>Year</option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>
+					<option>2021</option>
+					<option>2022</option>
+					<option>2023</option>
+					<option>2024</option>
+					<option>2025</option>
+					<option>2026</option>
+				</select>
+			</label>
+			<label for="CVV">CVV<br>
+				<input class="ba-main__form--input2" type="numbers" name="CVV" placeholder="CVV" minlength="3" maxlength="4" required> 3 or 4 digits - <a href="#">view example</a>
+			</label>
+			<hr>
+			<input class="ba-main__form--submit" type="submit" name="submit" value="Pay">
+			<a class="ba-main__form--a" href="#">Cancel order</a>
+		</form>
+	</div>
+</body>
+</html>
